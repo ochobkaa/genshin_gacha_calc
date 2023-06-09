@@ -1,0 +1,741 @@
+# Char roll density data path
+char_density_path: "CharRollDensity.csv"
+
+# Weapon roll density data path
+weapon_density_path: "WeaponRollDensity.csv"
+
+# Char banner pity
+char_pity: 90
+
+# Weapon banner pity
+weapon_pity: 80
+
+# Learned model polynomes files output path
+model_output_path: "models"
+
+# Learned model polynomes files output filename. Model type post-fix will be added after it in filenames.
+model_output_filename: "model"
+
+models_conf:
+  fifty_fifty:
+  # Fifty-fifty
+  # C0
+  -
+    consts: 0
+    refines: 0
+    pow: 2
+    delta: 1e-5
+    depth: 4
+    min_interval: 5
+  # C1
+  -
+    consts: 1
+    refines: 0
+    pow: 2
+    delta: 1e-5
+    depth: 4
+    min_interval: 5
+  # C2
+  -
+    consts: 2
+    refines: 0
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # C3
+  -
+    consts: 3
+    refines: 0
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # C4
+  -
+    consts: 4
+    refines: 0
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # C5
+  -
+    consts: 5
+    refines: 0
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C6
+  -
+    consts: 6
+    refines: 0
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # Char+Weapon models
+  # C0 R1
+  -
+    consts: 0
+    refines: 1
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # C0 R2
+  -
+    consts: 0
+    refines: 2
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # C0 R3
+  -
+    consts: 0
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C0 R4
+  -
+    consts: 0
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C0 R5
+  -
+    consts: 0
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C1 R1
+  -
+    consts: 1
+    refines: 1
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # C1 R2
+  -
+    consts: 1
+    refines: 2
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C1 R3
+  -
+    consts: 1
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C1 R4
+  -
+    consts: 1
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  -
+  # C1 R5
+    consts: 1
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C2 R1
+  -
+    consts: 2
+    refines: 1
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C2 R2
+  -
+    consts: 2
+    refines: 2
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C2 R3
+  -
+    consts: 2
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C2 R4
+  -
+    consts: 2
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C2 R5
+  -
+    consts: 2
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C3 R1
+  -
+    consts: 3
+    refines: 1
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C3 R2
+  -
+    consts: 3
+    refines: 2
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C3 R3
+  -
+    consts: 3
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C3 R4
+  -
+    consts: 3
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C3 R5
+  -
+    consts: 3
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C4 R1
+  -
+    consts: 4
+    refines: 1
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C4 R2
+  -
+    consts: 4
+    refines: 2
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C4 R3
+  -
+    consts: 4
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C4 R4
+  -
+    consts: 4
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C4 R5
+  -
+    consts: 4
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C5 R1
+  -
+    consts: 5
+    refines: 1
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C5 R2
+  -
+    consts: 5
+    refines: 2
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C5 R3
+  -
+    consts: 5
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C5 R4
+  -
+    consts: 5
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C5 R5
+  -
+    consts: 5
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C6 R1
+  -
+    consts: 6
+    refines: 1
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C6 R2
+  -
+    consts: 6
+    refines: 2
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C6 R3
+  -
+    consts: 6
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C6 R4
+  -
+    consts: 6
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C6 R5
+  -
+    consts: 6
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+
+  no_fifty_fifty:
+  # W/o Fifty-fifty
+  # C0
+  -
+    consts: 0
+    refines: 0
+    pow: 2
+    delta: 1e-5
+    depth: 4
+    min_interval: 5
+  # C1
+  -
+    consts: 1
+    refines: 0
+    pow: 2
+    delta: 1e-5
+    depth: 4
+    min_interval: 5
+  # C2
+  -
+    consts: 2
+    refines: 0
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # C3
+  -
+    consts: 3
+    refines: 0
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # C4
+  -
+    consts: 4
+    refines: 0
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # C5
+  -
+    consts: 5
+    refines: 0
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C6
+  -
+    consts: 6
+    refines: 0
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # Char+Weapon models
+  # C0 R1
+  -
+    consts: 0
+    refines: 1
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # C0 R2
+  -
+    consts: 0
+    refines: 2
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # C0 R3
+  -
+    consts: 0
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C0 R4
+  -
+    consts: 0
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C0 R5
+  -
+    consts: 0
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C1 R1
+  -
+    consts: 1
+    refines: 1
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # C1 R2
+  -
+    consts: 1
+    refines: 2
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C1 R3
+  -
+    consts: 1
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C1 R4
+  -
+    consts: 1
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  -
+  # C1 R5
+    consts: 1
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C2 R1
+  -
+    consts: 2
+    refines: 1
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C2 R2
+  -
+    consts: 2
+    refines: 2
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C2 R3
+  -
+    consts: 2
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C2 R4
+  -
+    consts: 2
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C2 R5
+  -
+    consts: 2
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C3 R1
+  -
+    consts: 3
+    refines: 1
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C3 R2
+  -
+    consts: 3
+    refines: 2
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C3 R3
+  -
+    consts: 3
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C3 R4
+  -
+    consts: 3
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C3 R5
+  -
+    consts: 3
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C4 R1
+  -
+    consts: 4
+    refines: 1
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C4 R2
+  -
+    consts: 4
+    refines: 2
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C4 R3
+  -
+    consts: 4
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C4 R4
+  -
+    consts: 4
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C4 R5
+  -
+    consts: 4
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C5 R1
+  -
+    consts: 5
+    refines: 1
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C5 R2
+  -
+    consts: 5
+    refines: 2
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C5 R3
+  -
+    consts: 5
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C5 R4
+  -
+    consts: 5
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C5 R5
+  -
+    consts: 5
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C6 R1
+  -
+    consts: 6
+    refines: 1
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # C6 R2
+  -
+    consts: 6
+    refines: 2
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C6 R3
+  -
+    consts: 6
+    refines: 3
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C6 R4
+  -
+    consts: 6
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+  # C6 R5
+  -
+    consts: 6
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 20
+
+  weapon_only:
+  # Weapon only models
+  # R1
+  -
+    consts: -1
+    refines: 1
+    pow: 2
+    delta: 1e-5
+    depth: 4
+    min_interval: 5
+  # R2
+  -
+    consts: -1
+    refines: 2
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # R3
+  -
+    consts: -1
+    refines: 3
+    pow: 3
+    delta: 1e-6
+    depth: 4
+    min_interval: 5
+  # R4
+  -
+    consts: -1
+    refines: 4
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
+  # R5
+  -
+    consts: -1
+    refines: 5
+    pow: 4
+    delta: 1e-6
+    depth: 3
+    min_interval: 10
